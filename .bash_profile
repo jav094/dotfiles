@@ -1,0 +1,20 @@
+# Set up custom aliases, functions, etc.
+alias cls="clear"
+
+# Setting PATH for global npm installations
+export PATH=$PATH:~/npm-global/bin
+
+# Add keys to the ssh-agent so we can push to github, SSH, etc
+ssh-add ~/.ssh/github_rsa ~/.ssh/id_rsa
+
+# Set up the markers you see in bash shell
+export PS1="\w: "
+
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+# added by Anaconda2 4.0.0 installer
+export PATH="//anaconda/bin:$PATH"
