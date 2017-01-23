@@ -1,5 +1,23 @@
-# Set up custom aliases, functions, etc.
+# Set up personal aliases, functions, etc.
+
 alias cls="clear"
+
+# Make a directory and cd into it
+function mkcd {
+    mkdir $1
+    cd $1
+}
+
+# Delete a folder
+function rmdir {
+    rm -r $1
+}
+
+# Move stuff to Trash rather than deleting it
+function trash {
+    mv "$@" ~/.Trash
+}
+
 
 # Setting PATH for global npm installations
 export PATH=$PATH:~/npm-global/bin
