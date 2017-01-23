@@ -5,9 +5,10 @@ alias cls="clear"
 export PATH=$PATH:~/npm-global/bin
 
 # Add keys to the ssh-agent so we can push to github, SSH, etc
+# This is a workaround until I figure out a more permanent way of having macOS remember my SSH keys.
 ssh-add ~/.ssh/github_rsa ~/.ssh/id_rsa
 
-# Set up the markers you see in bash shell
+# Set up the marker thingies you see in bash shell
 export PS1="\w: "
 
 
