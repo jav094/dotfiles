@@ -1,7 +1,12 @@
-# Set up personal aliases, functions, etc.
+# Set up personal aliases, functions, variables, and settings.
+set completion-ignore-case On
 
 alias cls="clear"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ~="cd ~"
 alias jn="jupyter notebook"
+alias grep="grep --color=auto"
 
 # Make a directory and cd into it
 function mkcd {
@@ -27,8 +32,12 @@ export PATH=$PATH:~/npm-global/bin
 # This is a workaround until I figure out a more permanent way of having macOS remember my SSH keys.
 ssh-add ~/.ssh/github_rsa ~/.ssh/id_rsa
 
-# Set up the marker thingies you see in bash shell
-export PS1="\w: "
+# Customize the bash environment (in color!)
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export CLICOLOR=1
+
+# Customize the bash prompt
+export PS1="\u_ \W: "
 
 
 # Setting PATH for Python 2.7
