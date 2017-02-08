@@ -1,6 +1,7 @@
 # Set up personal aliases, functions, etc.
 
 alias cls="clear"
+alias jn="jupyter notebook"
 
 # Make a directory and cd into it
 function mkcd {
@@ -22,7 +23,7 @@ function trash {
 # Setting PATH for global npm installations
 export PATH=$PATH:~/npm-global/bin
 
-# Add keys to the ssh-agent so we can push to github, SSH, etc
+# Add keys to the ssh-agent so we can push to github, open SSH connections, etc
 # This is a workaround until I figure out a more permanent way of having macOS remember my SSH keys.
 ssh-add ~/.ssh/github_rsa ~/.ssh/id_rsa
 
