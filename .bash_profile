@@ -14,11 +14,6 @@ function mkcd {
     cd $1
 }
 
-# Delete a folder
-function rmdir {
-    rm -r $1
-}
-
 # Move stuff to Trash rather than deleting it
 function trash {
     mv "$@" ~/.Trash
