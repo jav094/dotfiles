@@ -1,0 +1,10 @@
+# Add keys to the ssh-agent so we can push to github, open SSH connections, etc
+# This is a workaround until I figure out a more permanent way of having macOS remember my SSH keys.
+ssh-add ~/.ssh/github_rsa ~/.ssh/id_rsa
+
+# Customize the bash environment (in color!)
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export CLICOLOR=1
+
+# Customize the bash prompt
+export PS1="\u_ \W: "

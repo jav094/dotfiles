@@ -1,0 +1,34 @@
+# Clears terminal output
+alias cls="clear"
+
+# Easier cd up one directory
+alias ..="cd ../"
+
+# Easier cd up two directory
+alias ...="cd ../../"
+
+# Easier cd to home
+alias home="cd ~"
+
+# Easier cd to work
+alias work="cd ~/Work"
+
+# Launch Jupyter notebook in current directory
+alias jn="jupyter notebook"
+
+# Remap grep to always use color option
+alias grep="grep --color=auto"
+
+# Get OS X Software Updates, and update Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
+
+# Lock screen
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Eject All Mountable Volumes (with AppleScript)
+# Need to escape quotes
+# alias eject="osascript -e 'tell application "Finder" to eject (every disk whose ejectable is true)'"
+
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
