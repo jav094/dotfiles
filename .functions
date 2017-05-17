@@ -8,3 +8,13 @@ function mkcd {
 function trash {
     mv "$@" ~/.Trash
 }
+
+# Shut down the computer
+function shutdown {
+    sudo shutdown now "Shutting down"
+}
+
+# Restart the computer
+function restart {
+    sudo shutdown -r now "Rebooting"
+}
