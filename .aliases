@@ -11,7 +11,10 @@ alias ...="cd ../../"
 alias home="cd ~"
 
 # Easier cd to work
-alias work="cd ~/Work"
+alias work="cd ~/Dropbox/Work/"
+
+# Easier cd to downloads
+alias dl="cd ~/Downloads"
 
 # Launch Jupyter notebook in current directory
 alias jn="jupyter notebook"
