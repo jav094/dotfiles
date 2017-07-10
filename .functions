@@ -4,6 +4,11 @@ function mkcd {
     cd $1
 }
 
+# Start HTTP server in the current directory
+function server {
+    python -m SimpleHTTPServer 8000
+}
+
 # Move stuff to Trash rather than deleting it
 function trash {
     mv "$@" ~/.Trash
@@ -17,4 +22,9 @@ function shutdown {
 # Restart the computer
 function restart {
     sudo shutdown -r now "Rebooting"
+}
+
+# Restart camera process
+function fixcamera {
+    sudo killall VDCAssistant
 }
