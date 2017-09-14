@@ -1,0 +1,11 @@
+# exclude everything except directory foo/bar
+    /*
+    # !/foo
+    # /foo/*
+    # !/foo/bar
+
+	!.aliases
+	!.bash_env
+	!.bash_profile
+	!.functions
+	!.README.md
