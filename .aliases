@@ -1,10 +1,12 @@
 # Clears terminal output
+alias c="clear"
+alias cl="clear"
 alias cls="clear"
 
 # Easier cd up one directory
 alias ..="cd ../"
 
-# Easier cd up two directory
+# Easier cd up two directories
 alias ...="cd ../../"
 
 # Easier cd to home
@@ -15,6 +17,13 @@ alias work="cd ~/Dropbox/Work/"
 
 # Easier cd to downloads
 alias dl="cd ~/Downloads"
+
+#Easier git stuff
+alias s="git status"
+alias gs="git status"
+
+alias p="git push"
+alias gp="git push"
 
 # Launch Jupyter notebook in current directory
 alias jn="jupyter notebook"
