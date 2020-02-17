@@ -15,17 +15,14 @@ function trash {
     mv "$@" ~/.Trash
 }
 
-# Shut down the computer
-function shutdown {
-    sudo shutdown now "Shutting down"
-}
-
-# Restart the computer
-function restart {
-    sudo shutdown -r now "Rebooting"
-}
-
 # Restart camera process
 function fixcamera {
     sudo killall VDCAssistant
 }
+
+# Get macOS Software Updates, update Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
+
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
